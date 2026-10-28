@@ -2,8 +2,8 @@
 **Materia:** Lenguajes y Autómatas II (SCD-1016)  
 **Tema:** Encuadre, Diagnóstico de Punteros y Metodología IA  
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
-**Estudiante:** [Nombre Completo]  
-**Matrícula:** [No. de Control]  
+**Estudiante:** Jose Alfredo Nahuat Canul 
+**Matrícula:** 24531399
 **Track:** C (el harness evalúa C; la versión en Rust es opcional y no se califica con este harness)  
 
 ---
@@ -54,7 +54,21 @@ RESULTADO: n/n pruebas superadas
 
 ### Reporte Crítico
 *¿Qué caso borde o problema omitió la IA y cómo lo solucionaste?*
-> 
+>
+La implementación se revisó mediante las pruebas del harness.
+Se verificaron cadenas normales, cadenas vacías y el caso de un
+puntero NULL. También se comprobó que la función invirtiera
+los caracteres sin utilizar memoria auxiliar.
 
----
+## Caso borde omitido por la IA
+
+En la primera propuesta revisé si se contemplaban todos los casos
+borde exigidos por el contrato. El caso que faltaba fue:
+Al revisar la primera propuesta de la IA, comparé el código con los requisitos del contrato y comprobé si contemplaba los casos borde. Durante la revisión también detecté un error de sintaxis en el comentario inicial, que impedía compilar el archivo.
+
+Lo detecté al comparar el código generado con el contrato
+y revisar las pruebas del harness. Después corregí la implementación
+y volví a ejecutar las pruebas.
+
+--- Jose Alfredo Nahuat Canul Unidad: Ignacio Zaragoza
 **Firma digital:** [Usuario de GitHub]
