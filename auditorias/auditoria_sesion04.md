@@ -2,8 +2,8 @@
 **Materia:** Lenguajes y Autómatas II (SCD-1016)  
 **Tema:** Anatomía de un Árbol Sintáctico (AST)  
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
-**Estudiante:** [Nombre Completo]  
-**Matrícula:** [No. de Control]  
+**Estudiante:** Jose Alfredo Nahuat Canul  
+**Matrícula:** 24531399
 **Track:** C (el harness evalúa C; la versión en Rust es opcional y no se califica con este harness)  
 
 ---
@@ -55,6 +55,6 @@ RESULTADO: n/n pruebas superadas
 ### Reporte Crítico
 *¿Qué caso borde o problema omitió la IA y cómo lo solucionaste?*
 > 
-
----
+La IA omitió considerar algunos casos borde, principalmente cuando se recibe un puntero NULL al evaluar o liberar el árbol. Para solucionarlo, agregué una condición que comprueba si el nodo es NULL antes de acceder a sus datos. En la función evaluar() hice que devolviera -1 cuando recibe un puntero NULL, y en liberar_arbol() agregué una condición para evitar errores al liberar memoria. Después ejecuté el harness y comprobé que las 6 pruebas fueran satisfactorias.
+--- Jose Alfredo Nahuat Canul Unidad: Ignacio Zaragosa
 **Firma digital:** [Usuario de GitHub]
