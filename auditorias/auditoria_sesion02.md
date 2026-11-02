@@ -2,8 +2,8 @@
 **Materia:** Lenguajes y Autómatas II (SCD-1016)  
 **Tema:** Gestión en GitHub Web y Nodos Dinámicos  
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
-**Estudiante:** [Nombre Completo]  
-**Matrícula:** [No. de Control]  
+**Estudiante:** Jose Alfredo Nahuat Canul  
+**Matrícula:** 24531399
 **Track:** C (el harness evalúa C; la versión en Rust es opcional y no se califica con este harness)  
 
 ---
@@ -54,7 +54,12 @@ RESULTADO: n/n pruebas superadas
 
 ### Reporte Crítico
 *¿Qué caso borde o problema omitió la IA y cómo lo solucionaste?*
-> 
+>
+Al revisar el código del Artesano, identifiqué que no contempla la validación del apuntador lexema cuando su valor es NULL. Esto podría provocar un error al utilizar la función strncpy. Para solucionarlo, se puede agregar una condición que verifique que el apuntador no esté vacío antes de copiar la cadena. También comprobé que el programa pueda agregar elementos cuando la lista está vacía, contar correctamente los tokens y liberar la memoria utilizada para evitar fugas de memoria.
 
----
+## Caso borde omitido por la IA
+La IA omitió validar si el apuntador lexema era NULL antes de utilizar la función strncpy. Esto puede ocasionar un error durante la ejecución del programa. Para solucionarlo, agregué una condición que verifica si el apuntador contiene una cadena válida antes de copiarla. También revisé que la función pudiera trabajar con una lista vacía y que la memoria se liberara correctamente al finalizar el programa.
+
+
+--- Jose Alfredo Nahuat Canul Unidad: Ignacio Zaragosa
 **Firma digital:** [Usuario de GitHub]
