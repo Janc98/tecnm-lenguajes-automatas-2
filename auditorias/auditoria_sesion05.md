@@ -2,8 +2,8 @@
 **Materia:** Lenguajes y Autómatas II (SCD-1016)  
 **Tema:** Recorridos del AST y Notación Polaca  
 **Docente Titular:** MCC. Iván Márquez Larios (`ijmarquezl`)  
-**Estudiante:** [Nombre Completo]  
-**Matrícula:** [No. de Control]  
+**Estudiante:** Jose Alfredo Nahuat Canul  
+**Matrícula:** 24531399 
 **Track:** C (el harness evalúa C; la versión en Rust es opcional y no se califica con este harness)  
 
 ---
@@ -55,6 +55,6 @@ RESULTADO: n/n pruebas superadas
 ### Reporte Crítico
 *¿Qué caso borde o problema omitió la IA y cómo lo solucionaste?*
 > 
-
----
+La IA omitió considerar el caso de un buffer con capacidad insuficiente para almacenar toda la expresión RPN. Lo solucioné agregando condiciones para verificar el espacio disponible antes de escribir los caracteres. También comprobé que, cuando el árbol es NULL, la función genere una cadena vacía y que el buffer siempre termine correctamente con '\0'
+--- Jose Alfredo Nahuat Canul Unidad: Ignacio Zaragosa
 **Firma digital:** [Usuario de GitHub]
