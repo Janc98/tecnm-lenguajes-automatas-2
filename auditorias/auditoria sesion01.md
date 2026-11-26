@@ -52,8 +52,6 @@ Requisitos:
 
 ## 3. Código Devuelto por el Modelo
 ```c
-// Código devuelto por el LLM
-```
 #include "api_sesion01.h"
 
 void invertir(char *s) {
@@ -81,6 +79,8 @@ void invertir(char *s) {
         }
     }
 }
+```
+
 ---
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness)
