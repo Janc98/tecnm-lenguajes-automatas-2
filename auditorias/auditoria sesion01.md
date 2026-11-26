@@ -11,8 +11,9 @@
 ## 1. Fase 1: El Artesano (Dificultad Manual)
 *Reto:* Inversión de buffer in-place (char*)  
 *Describe qué problema o restricción de memoria/sintaxis identificaste al codificar a mano:*
-> 
 Al realizar la inversión del buffer manualmente, identifiqué que debía trabajar directamente con punteros y posiciones de la cadena. La principal dificultad fue encontrar el último carácter sin contar el terminador nulo \0. También tuve que controlar que los índices no se salieran de los límites de memoria. Para resolverlo utilicé dos índices, uno al inicio y otro al final, intercambiando los caracteres mediante una variable auxiliar. La función modifica la misma cadena sin utilizar memoria adicional.
+> 
+
 ---
 
 ## 2. Fase 2: El Científico (Ingeniería de Requerimientos C-R-E-O)
