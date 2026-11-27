@@ -60,6 +60,7 @@ La función debe cumplir los siguientes requisitos:
 ## 3. Código Devuelto por el Modelo
 ```c
 #include "api_sesion09.h"
+
 #include <stdio.h>
 
 void reportar(const char *archivo, int linea, int columna,
