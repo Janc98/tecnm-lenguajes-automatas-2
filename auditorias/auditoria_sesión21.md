@@ -27,7 +27,7 @@
 
 ### 2.2 Prompt Estructurado
 ```text
-[```text
+[
 CONTEXTO:
 Estoy desarrollando una práctica de Lenguajes y Autómatas II sobre los fundamentos del Código de Tres Direcciones (TAC). Necesito implementar dos funciones en lenguaje C para generar temporales únicos y representar instrucciones mediante cuádruplos.
 
