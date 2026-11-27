@@ -60,14 +60,12 @@ REQUISITOS:
 gcc -std=c11 -Wall -Wextra -Werror
 
 OUTPUT:
-Entrega el código completo y modular para ia_sesion21_c.c, incluyendo las cabeceras necesarias, comentarios breves y una explicación de la complejidad de las funciones.
-```]
+Entrega el código completo y modular para ia_sesion21_c.c, incluyendo las cabeceras necesarias, comentarios breves y una explicación de la complejidad de las funciones.]
 ```
 
 ---
 
 ## 3. Código Devuelto por el Modelo
-```c
 ```c
 #include "api_sesion21.h"
 #include <stdio.h>
@@ -112,17 +110,12 @@ void emitir_cuadruplo(char *dst, int cap,
                    valor_seguro(res));
 }
 ```
-```
-
 ---
 
 ## 4. Fase 3: El Auditor (Resultados del Test Harness)
 *Pruebas ejecutadas:* Expresiones aritméticas compuestas
 
 ### Salida del harness
-```text
-**Prueba de Artesano:**
-
 ```text
 === AUDITORIA SESION 21 - Cuadruplos y temporales unicos ===
 [ 1] nuevo_temporal(_t0)       esperado: _t0 obtenido: _t0 OK
@@ -147,11 +140,6 @@ void emitir_cuadruplo(char *dst, int cap,
 RESULTADO: 6/6 pruebas superadas
 TODO EN VERDE.
 ```
-```
-
-* [ ] Caso base y límites superados sin *Crash*.
-* [ ] No existen accesos fuera de límites ni *Memory Leaks*.
-* [ ] La complejidad teórica coincide con la implementada.
 
 ### Reporte Crítico
 *¿Qué caso borde o problema omitió la IA y cómo lo solucionaste?*
