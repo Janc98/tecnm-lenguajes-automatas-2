@@ -10,7 +10,7 @@
 
 ## 1. Fase 1: El Artesano (Dificultad Manual)
 *Reto:* Diagnóstico con línea y columna  
-*Describe qué problema o restricción de memoria/sintaxis identificaste al codificar a mano:Al realizar la implementación manual, identifiqué que uno de los principales cuidados era controlar el tamaño del buffer donde se almacena el mensaje de error. La función debía generar el diagnóstico con el formato exacto de GCC, incluyendo el nombre del archivo, número de línea, columna y mensaje. También tuve que considerar que el buffer podía tener una capacidad pequeña, por lo que utilicé snprintf() para evitar escribir más caracteres de los permitidos. Otra dificultad fue comprobar que los parámetros no fueran nulos y que la salida siempre terminara correctamente con el carácter '\0'.*
+*Describe qué problema o restricción de memoria/sintaxis identificaste al codificar a mano:Al realizar la implementación manual, identifiqué que uno de los principales cuidados era controlar el tamaño del buffer donde se almacena el mensaje de error. La función debía generar el diagnóstico con el formato exacto de GCC, incluyendo el nombre del archivo, número de línea, columna y mensaje. También tuve que considerar que el buffer podía tener una capacidad pequeña, por lo que utilicé la función snprintf() para evitar escribir más caracteres de los permitidos. Otra dificultad fue comprobar que los parámetros no fueran nulos y que la salida siempre terminara correctamente con el carácter '\0'.*
 > 
 
 ---
@@ -27,32 +27,45 @@
 
 ### 2.2 Prompt Estructurado
 ```text
-[
+[CONTEXTO:
+Estoy trabajando en una práctica de Lenguajes y Autómatas II,
+utilizando el lenguaje C y el compilador GCC. Necesito
+implementar una función para generar reportes formales
+de errores semánticos.
 
-**Contexto:** Estoy trabajando en una práctica de Lenguajes y Autómatas II, utilizando el lenguaje C y el compilador GCC. Necesito implementar una función para generar reportes formales de errores semánticos.
+ROL:
+Actúa como un ingeniero de software especializado en
+programación en C y desarrollo de compiladores.
 
-**Rol:** Actúa como un ingeniero de software especializado en programación en C y desarrollo de compiladores.
+ESPECIFICACIÓN:
+Desarrolla la función reportar() respetando exactamente
+la siguiente firma:
 
-**Especificación:** Desarrolla la función `reportar()` respetando exactamente la siguiente firma:
-
-```c
 void reportar(const char *archivo, int linea, int columna,
               const char *mensaje, char *salida, int cap);
-```
 
 La función debe cumplir los siguientes requisitos:
-- Generar el mensaje con el formato exacto `archivo:línea:columna: error: mensaje`.
-- No agregar espacios adicionales ni punto final.
-- Utilizar `snprintf()` para evitar desbordamientos del buffer.
-- Nunca escribir más de `cap-1` caracteres.
-- Garantizar la terminación con `'\0'` cuando exista un buffer válido.
-- Comprobar que `salida` no sea NULL y que `cap` sea mayor que cero.
-- Manejar los parámetros `archivo` y `mensaje` cuando sean NULL.
-- Mantener compatibilidad con C11 y las opciones `-Wall -Wextra -Werror`.
-- No incluir una función `main()`.
-- Incluir la cabecera `api_sesion09.h`.
 
-**Salida:** Proporciona únicamente la implementación completa del archivo `ia_sesion09_c.c`, respetando la firma original, y una breve explicación de su funcionamiento y complejidad.]
+- Generar el mensaje con el formato exacto:
+  archivo:línea:columna: error: mensaje.
+- No agregar espacios adicionales ni punto final.
+- Utilizar snprintf() para evitar desbordamientos.
+- Nunca escribir más de cap-1 caracteres.
+- Garantizar la terminación con '\0' cuando exista
+  un buffer válido.
+- Comprobar que salida no sea NULL y que cap sea mayor
+  que cero.
+- Manejar archivo y mensaje cuando sean NULL.
+- Mantener compatibilidad con C11.
+- Compilar con -Wall -Wextra -Werror.
+- No incluir una función main().
+- Incluir la cabecera api_sesion09.h.
+
+OUTPUT:
+Proporciona únicamente la implementación completa del
+archivo ia_sesion09_c.c, respetando la firma original,
+e incluye una breve explicación de su funcionamiento
+y complejidad.]
 ```
 
 ---
