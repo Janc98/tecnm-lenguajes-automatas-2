@@ -164,5 +164,6 @@ TODO EN VERDE.
 *¿Qué caso borde o problema omitió la IA y cómo lo solucionaste?*
 > 
 Al revisar el código generado por la IA, observé que no se incluyó una función específica para liberar la memoria dinámica de los nodos que se van creando en la tabla hash. Aunque la implementación utiliza correctamente malloc para reservar memoria, es importante liberar esos espacios cuando la tabla deja de utilizarse. Para solucionar este problema, identifiqué que se debe recorrer cada cubeta, avanzar por los nodos de las listas enlazadas y utilizar free para liberar cada elemento. También consideré importante probar nombres que superen los 15 caracteres permitidos, para evitar desbordamientos en el arreglo nombre. Las pruebas proporcionadas por el harness fueron superadas, aunque estos casos adicionales no fueron evaluados.
+
 --- Jose Alfredo Nahuat Canul Unidad: Igancio Zaragosa
 **Firma digital:** [Usuario de GitHub]
